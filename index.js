@@ -24,9 +24,9 @@ fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
             <span>${data.name}</span>
         `
         document.getElementById("crypto").innerHTML += `
-            <p>🎯: $${data.market_data.current_price.usd}</p>
-            <p>📈: $${data.market_data.high_24h.usd}</p>
-            <p>📉: $${data.market_data.low_24h.usd}</p>
+            <p>🎯: €${data.market_data.current_price.eur}</p>
+            <p>📈: €${data.market_data.high_24h.eur}</p>
+            <p>📉: €${data.market_data.low_24h.eur}</p>
         `
     })
     .catch(err => console.error(err))
